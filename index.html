@@ -17,7 +17,7 @@
 
       <div class="row">
         <div class="col-md-6">
-          <form id="formOne">
+          <form class="formOne">
             <div class="form-group">
               <label for="name" >Hello, what's your name?</label>
               <input id="name" class="form-control" type="text">
@@ -38,26 +38,49 @@
           </form>
         </div>
         <div class="col-md-6">
-          <form id="formTwo">
+          <form class="formOne">
             <div class="form-group">
-              <label for="favColor">Select your favorite color</label>
-              <input id="favColor" class="form-control" type="color">
-            </div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
-          </form>
-          <form id="formThree">
-            <div class="form-group">
-              <label for="birthday">Please enter your birthday</label>
+              <label for="birthday">Please enter your birthday:</label>
               <input id="birthday" class="form-control" type="date">
             </div>
-            <button type="submit" class="btn btn-secondary">Submit</button>
+            <div class="form-group">
+              <label for="favColor">Select your favorite color:</label>
+              <input id="favColor" class="form-control" type="color">
+            </div>
+            <label for="beverage">Please choose your choice of beverage below:</label>
+            <select class="form-control" id="beverage">
+              <option>--Select--</option>
+              <option>Coffee</option>
+              <option>Beer</option>
+              <option>Tea</option>
+              <option>Red Bull</option>
+              <option>Coke</option>
+            </select>
+            <div class="radio">
+              <label>Please choose your favorite snack below:</label><br>
+              <label>
+                <input type="radio" name="snack" value="hersheys" checked>
+                Hersheys
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="snack" value="cookies">
+                Cookies
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="snack" value="chips">
+                Chips
+              </label>
+            </div>
           </form>
         </div>
       </div>
 
-
       <div id="reply">
-        <p>Hello <span class="name"></span>, your <span class="age"></span> years old and your favorite music is <span class="music"></span>.  We also know you like to eat <span class="food"></span>.</p>
+        <p>Hello <span class="name"></span>, your <span class="age"></span> years old and your favorite music is <span class="music"></span>.  We also know you like to eat <span class="food"></span> and snack on <span class="snack"></span>.  Your favorite beverage is <span class="beverage"></beverage> and you birthday is on <span class="birthday"></span>.  You also mentioned your favorite color is <span class="favColor"></span>.</p>
       </div>
 
     </div>

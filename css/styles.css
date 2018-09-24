@@ -3,6 +3,15 @@
 }
 
 .intro {
+  margin-top: 3%;
   text-align: center;
-  margin-bottom: 15%;
+  margin-bottom: 20%;
+}
+
+body {
+  background-image: linear-gradient(to right, #00416a, #e4e5e6);
+}
+
+.radio {
+  margin-top:2%;
 }
